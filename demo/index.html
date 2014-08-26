@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/spl-comment.css">
+</head>
+<body>
+<div class="container">
+    <div class="spl-comment">
+        <div class="spl-reply">
+            <input type="text" class="spl-area" placeholder="说点什么吧~" />
+            <div class="spl-submit">发布</div>
+        </div>
+        <div class="spl-list">
+        </div>
+
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="../src/js/spl-comment.js"></script>
+<script>
+    $(function() {
+        $('.spl-comment').splComment({
+            user: '贺乙钊',
+            url: './data.php'
+        });
+    });
+</script>
+</body>
+</html>
